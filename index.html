@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nadia's To-Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1 id="main-heading">Nadia's To-Do List</h1>
+        <ul aria-label="Main navigation">
+          <li><a href="index.html" aria-current="page">My To-Dos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="date-display">
+        <h2 id="todaysDate"></h2>
+        <!-- Todays date display -->
+      </section>
+      <section class="task-input">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter a new task"
+          aria-label="Enter a new task"
+        />
+        <button id="addTaskButton" aria-label="Add new task">Add Task</button>
+      </section>
+      <section class="task-section">
+        <h2>Pending Tasks</h2>
+        <ul id="pendingTasksList" class="task-list">
+          <!-- Pending tasks are added here! -->
+        </ul>
+      </section>
+      <section class="task-section">
+        <h2>Completed Tasks</h2>
+        <ul id="completedTasksList" class="task-list">
+          <!-- Completed tasks are added here! -->
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Nadia's To-Do List</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

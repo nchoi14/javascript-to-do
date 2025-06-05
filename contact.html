@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - To-Do List Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 id="main-heading">Nadia's To-Do List</h1>
+      <ul aria-label="Main navigation">
+        <li><a href="index.html">My To-Dos</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>
+        Have any questions or feedback? Feel free to reach out to us!
+      </p>
+      <form id="contactForm" aria-label="Contact Form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Type your message here" required aria-required="true"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Nadia's To-Do List</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
